@@ -22,7 +22,7 @@ function Register() {
                 toast.error(data.error)
             } else {
                 setData({})
-                toast.success('Login Successful')
+                toast.success('User Registered')
                 navigate('/login')
             }
         } catch (error) {
