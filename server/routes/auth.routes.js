@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { loginUser, registerUser } from "../controllers/auth.controllers.js";
+import { getProfile, loginUser, registerUser } from "../controllers/auth.controllers.js";
 
 const router = express.Router();
 
@@ -12,7 +12,8 @@ router.use(
 )
 
 router.post('/register', registerUser);
-router.post('/login', loginUser)
+router.post('/login', loginUser);
+router.get('/profile', getProfile)
 
 
 export default router;

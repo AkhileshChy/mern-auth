@@ -22,7 +22,7 @@ function Login() {
             } else {
                 setData({});
                 toast.success('Login Successful')
-                navigate('/')
+                navigate('/dashboard')
             }
         } catch (error) {
             
